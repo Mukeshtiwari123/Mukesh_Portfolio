@@ -1,0 +1,368 @@
+/* Add the CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    /* Font family */
+    line-height: 1.6;
+    /* Line height */
+    background-color: #f4f4f4;
+    /* Background color */
+    margin: 0;
+    /* Remove margin */
+    padding: 0;
+    /* Remove padding */
+}
+
+.header {
+    background: #007bff;
+    /* Header background color */
+    color: #fff;
+    /* Text color */
+    padding: 10px;
+    /* Padding for header */
+    position: relative;
+    /* Relative positioning */
+}
+
+/* Styles for the hamburger menu */
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    color: #333;
+    font-size: 24px;
+    padding: 10px;
+    user-select: none;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    user-select: none;
+}
+
+.menu-item:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-item.active {
+    color: #007bff;
+}
+
+.content {
+    text-align: center;
+    /* Center text */
+    margin: 20px;
+    /* Margin for content */
+}
+
+.round-image {
+    width: 300px;
+    /* Image width */
+    height: 300px;
+    /* Image height */
+    border-radius: 50%;
+    /* Round image */
+    border: 5px solid #007bff;
+    /* Border around image */
+}
+
+.typing-text {
+    font-size: 2em;
+    /* Font size for typing text */
+    overflow: hidden;
+    /* Hide overflow */
+    white-space: nowrap;
+    /* No wrap */
+    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+    /* Typing effect */
+    width: 60%;
+    /* Width of typing text */
+    margin: 0 auto;
+    /* Centering */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        /* Start width for typing */
+    }
+
+    to {
+        width: 100%;
+        /* End width for typing */
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+        /* Border color */
+    }
+
+    50% {
+        border-color: black;
+        /* Blink effect */
+    }
+}
+
+/* Additional styles */
+.container {
+    max-width: 800px;
+    /* Max width */
+    margin: 20px auto;
+    /* Center container */
+    padding: 20px;
+    /* Padding for container */
+    background: #fff;
+    /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+table {
+    width: 100%;
+    /* Full width */
+    border-collapse: collapse;
+    /* Collapse borders */
+}
+
+th,
+td {
+    padding: 12px;
+    /* Padding for cells */
+    border: 1px solid #ddd;
+    /* Border for cells */
+    text-align: left;
+    /* Left align text */
+}
+
+th {
+    background-color: #007bff;
+    /* Header background color */
+    color: white;
+    /* Header text color */
+}
+
+/* Contact Info Styles */
+.contact-info {
+    margin: 20px;
+    /* Margin for contact info */
+    font-size: 1.1em;
+    /* Font size */
+}
+
+.contact-info a {
+    color: #007bff;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s;
+    /* Smooth transition */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+    color: #0056b3;
+    /* Darker link color on hover */
+}
+
+/* Contact Form Styles */
+.contact-form {
+    width: 70%;
+    /* Width of contact form */
+    float: right;
+    /* Float right */
+    padding: 10px;
+    /* Padding for contact form */
+    background-color: #fff;
+    /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.contact-form h2 {
+    color: #333;
+    /* Heading color */
+    padding-bottom: 10px;
+    /* Padding below heading */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Padding for inputs */
+    margin-bottom: 20px;
+    /* Bottom margin */
+    border: 1px solid #ccc;
+    /* Border */
+    border-radius: 4px;
+    /* Rounded corners */
+    box-sizing: border-box;
+    /* Box sizing */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    /* Border color on focus */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    /* Shadow on focus */
+}
+
+.contact-form button {
+    background-color: #007bff;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    /* No border */
+    border-radius: 4px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding for button */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    /* Darker background on hover */
+}
+
+/* Certificates Container Styles */
+.certificates-container {
+    column-count: 1;
+    column-gap: 10px;
+    display: block;
+
+
+
+}
+
+.certificate-item {
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.certificate-item img {
+    width: 50%;
+    height: 50%;
+}
+
+/* Button Styles */
+.btn {
+    /* margin-left: 100px; Left margin for button */
+    background-color: lightblue;
+    /* Button background color */
+    font-size: 20px;
+    /* Font size */
+    padding: 10px 20px;
+    /* Padding for button */
+    border: none;
+    /* No border */
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+    transition: background 0.3s, transform 0.3s;
+    /* Smooth transitions */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    /* Darker background on hover */
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+
+
+/* Media query for mobile */
+@media only screen and (max-width: 600px) {
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 200px;
+        background-color: #f9f9f9;
+        border-right: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item {
+        display: block;
+    }
+
+    .certificate-item img {
+        width: 80%;
+        height: 50%;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 60%;
+        }
+    }
+}
+
+/* Add styles to center the "Contact Me" button and hide the form initially */
+.contact-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.contact-form {
+    display: none;
+    /* Hide form initially */
+    width: 70%;
+    float: right;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}

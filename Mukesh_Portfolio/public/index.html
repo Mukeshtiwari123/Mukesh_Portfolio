@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukesh-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        <div class="menu-container">
+            <div class="menu">
+                <a href="#home" class="menu-item active">Home</a>
+                <a href="#About" class="menu-item">About</a>
+                <a href="#Certificates" class="menu-item">Certificates</a>
+                <a href="#Contact" class="menu-item">Contact Me</a>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="home"></h2>
+    <div class="content">
+        <img src="download.png" alt="Mukesh Tiwari" class="round-image">
+        <br>
+        <h1 class="typing-text">Mukesh Shriprakash Tiwari</h1>
+        <br>
+        <button class="btn" onclick="window.open('Mukesh_Resume.pdf', '_blank')">View Resume</button>
+    </div>
+
+    <br><br>
+
+    <h2 id="About">Educational Qualifications</h2>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Education</th>
+                    <th>Institution</th>
+                    <th>Percentage / CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SSC</td>
+                    <td>Rajiv Gandhi Hindi High School, Vasai(West)</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>New English Jr. College, Vasai(West)</td>
+                    <td>87%</td>
+                </tr>
+                <tr>
+                    <td>BSCIT</td>
+                    <td>ANNASAHEB VARTAK COLLEGE, VASAI(WEST)</td>
+                    <td>8.85/10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br>
+
+    <div class="projects">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div>
+            <h3>1. <a target="_blank">E-COMMERCE WEBSITE :</a></h3>
+            <ul style="list-style-type:disc;">
+                <li>
+                    <p><b>Objective:</b> Developed a static e-commerce website using HTML, CSS, and JavaScript to
+                        showcase products and facilitate easy user interactions.</p>
+                </li>
+                <li>
+                    <p><b>Technology Used:</b>
+                    <ol type="1">
+                        <li>Frontend: HTML, CSS, JavaScript</li>
+                    </ol>
+                    </p>
+                </li>
+                <li>
+                    <p><b>Description:</b> Engineered a user-friendly e-commerce platform to enable convenient browsing
+                        and purchasing of products. Focused on creating a visually appealing layout and implementing
+                        responsive design principles to ensure optimal user experience across different devices.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Project 2 -->
+        <div>
+            <h3>2. Integrated Billing and Receipt Generation System :</h3>
+            <ul style="list-style-type:disc;">
+                <li>
+                    <p><b>Objective:</b> Implemented a streamlined solution for shopkeepers to manage transactions
+                        efficiently, from bill generation to receipt issuance, enhancing operational efficiency and
+                        customer satisfaction.</p>
+                </li>
+                <li>
+                    <p><b>Technology Used:</b>
+                    <ol type="1">
+                        <li>Frontend: HTML, CSS, JavaScript</li>
+                        <li>Backend: Python (Django framework)</li>
+                    </ol>
+                    </p>
+                </li>
+                <li>
+                    <p><b>Description:</b> Created Integrated Billing System using HTML, CSS, JavaScript (frontend) and
+                        Python (Django) for backend. Streamlines transactions for shopkeepers, boosting efficiency and
+                        customer satisfaction.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Project 3 -->
+        <div>
+            <h3>3. Vartak College Forum :</h3>
+            <ul style="list-style-type:disc;">
+                <li>
+                    <p><b>Objective:</b> Developed an online forum for Vartak College students to discuss and share
+                        resources.</p>
+                </li>
+                <li>
+                    <p><b>Technology Used:</b>
+                    <ol type="1">
+                        <li>Frontend: HTML, CSS, JavaScript</li>
+                        <li>Backend: Python (Django framework)</li>
+                    </ol>
+                    </p>
+                </li>
+                <li>
+                    <p><b>Description:</b> Designed a platform that allows students to engage in discussions, share
+                        study materials, and collaborate on projects, fostering a strong community among college peers.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <br><br>
+
+    <h2 id="Certificates">Certificates</h2>
+
+    <div class="certificates-container" style="display:flex; justify-content: center;">
+        <ol type="1">
+            <li>
+                <div class="certificate-item">
+                    <h3>Forum Website Certification</h3>
+                    <p>Issued by Vartak College</p>
+                    <img src="./certificates/ForumWebsite_Certificate.png" alt="Forum Website Certification">
+                </div>
+            </li>
+            <li>
+                <div class="certificate-item">
+                    <h3>Communication and Interview Skills Course Certification</h3>
+                    <p>Issued by CourseBazaar Learning</p>
+                    <img src="./certificates/Communication_Interview_certificate.png"
+                        alt="Communication and Interview Skills Certification">
+                </div>
+            </li>
+            <li>
+                <div class="certificate-item">
+                    <h3>Introduction to Large Language Models Certification</h3>
+                    <p>Issued by Simplilearn Learning</p>
+                    <img src="./certificates/Simplilearn Certificate.png" alt="Large Language Models Certification">
+                </div>
+            </li>
+            <li>
+                <div class="certificate-item">
+                    <h3>Linux Certification</h3>
+                    <p>Issued by Vartak College</p>
+                    <img src="./certificates/Linux_Certifate.png" alt="Linux Certification">
+                </div>
+            </li>
+            <li>
+                <div class="certificate-item">
+                    <h3>Library Certification</h3>
+                    <p>Issued by Vartak College</p>
+                    <img src="./certificates/Library_Certificate.png" alt="Library Certification">
+                </div>
+            </li>
+            <li>
+                <div class="certificate-item">
+                    <h3>Architecting Human Behaviour Certification</h3>
+                    <p>Issued by Fractal Analytics</p>
+                    <img src="./certificates/Architecting_Human_Behaviour_Certificate.png"
+                        alt="Architecting Human Behaviour Certification">
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <h2 id="Contact">Contact Information</h2>
+    <div class="container">
+        <div class="contact-info">
+            <p>
+                <i class="fas fa-phone"></i> Phone: +91 9545235942 / +91 8806876762
+            </p>
+            <p>
+                <i class="fas fa-envelope"></i> Email:
+                <a href="mailto:mukeshtiwari142005@gmail.com">mukeshtiwari142005@gmail.com</a>
+            </p>
+            <p>
+                <i class="fab fa-linkedin"></i> LinkedIn:
+                <a href="https://www.linkedin.com/in/mukesh-tiwari-730059291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank">
+                    https://www.linkedin.com/in/mukesh-tiwari-730059291
+                </a>
+            </p>
+            <p>
+                <i class="fab fa-github"></i> GitHub:
+                <a href="https://www.github.com/Mukeshtiwari123" target="_blank">www.github.com/Mukeshtiwari123</a>
+            </p>
+            <!-- Update your contact form button -->
+            <button class="contact-btn" type="button" id="contactBtn">Send Message</button>
+        </div>
+
+    </div>
+
+    <div style="display:flex; justify-content: center;">
+        <div class="contact-form" id="contactForm" style="position:absolute;">
+            <h2>Contact Form</h2>
+            <form id="contactFormElement">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    <script>
+
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.menu-item').forEach(el => el.classList.remove('active'));
+                this.classList.add('active');
+
+                var menu = document.querySelector('.menu');
+                if (menu.style.display === "block") {
+                    menu.style.display = "none";
+                }
+            });
+        });
+
+        // Show the contact form when the button is clicked
+        document.getElementById('contactBtn').addEventListener('click', function () {
+            document.getElementById('contactForm').style.display = 'block'; // Show the form
+        });
+
+        // Handle the form submission
+        document.getElementById('contactFormElement').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            fetch('http://localhost:3000/send-sms', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, message }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Message received successfully to Mukesh');
+                        document.getElementById('contactForm').style.display = 'none'; // Close the form
+                        // Clear the form fields
+                        document.getElementById('name').value = '';
+                        document.getElementById('email').value = '';
+                        document.getElementById('message').value = '';
+                    } else {
+                        alert('Failed to send message. Please try again.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again later.');
+                });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
